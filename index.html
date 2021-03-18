@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Webshop</title>
+  </head>
+  <body>
+    <header>
+      <nav class="px-4">
+        <div class="d-lg-flex ">
+          <div class="mx-auto">
+            <h1>Webshop</h1>
+          </div>
+          <div
+            class="nav-info align-items-center d-flex justify-content-between toggleBtn"
+          >
+            <span class="mr-lg-1"
+              ><i class="fas fa-shopping-cart"></i
+            ></span>
+          </div>
+        </div>
+      </nav>
+
+      <div id="cart" class="cart px-3 pt-4">
+        <div class="close-btn toggleBtn"><i class="fas fa-times"></i></div>
+
+        <!-- cart-items -->
+        <div class="cart-items text-capitalize my-5">
+          <!-- Show products in cart-->
+          <!-- <div
+            class=" d-flex align-items-center justify-content-around py-2"
+          >
+            <img src="/candy.jpg" class="cart-img" id="item-img" alt="" />
+            <span class="item-title">Fjällraven Backpack</span>
+            <span id="cart-item-price" class="cart-item-price" class=""
+              >10.99</span
+            >
+            <span>SEK</span>
+            <div class="d-flex">
+              <div class="cart-quantity-btn cart-quantity-decrement">-</div>
+              <div class="cart-quantity-container position-relative">
+                <input type="number" value="1" class="cart-quantity-input" />
+                <div class="cart-quantity-num">1</div>
+              </div>
+              <div class="cart-quantity-btn cart-quantity-increment">+</div>
+            </div>
+            <button id="cart-item-remove" class="btn cart-item-remove my-auto">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div> -->
+        </div>
+
+        <!-- cart total -->
+        <div
+          class="cart-total-container d-flex justify-content-around text-capitalize mt-5"
+        >
+          <h5>total</h5>
+          <h5>
+            <strong id="cart-total" class="font-weight-bold cart-total-price"
+              >0</strong
+            >
+            SEK
+          </h5>
+          <div>
+            <a
+              href="checkout.html"
+              class="btn btn-outline-secondary text-uppercase btn-pink btn-checkout disabled"
+              >checkout</a
+            >
+          </div>
+        </div>
+        <!--end cart total -->
+      </div>
+    </header>
+
+    <div class="container">
+      <div
+        id="products"
+        class="row row-cols-4 w-100 mx-auto justify-content-center"
+      >
+        <!--Print out products here-->
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
